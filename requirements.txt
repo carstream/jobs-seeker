@@ -1,0 +1,12 @@
+langchain
+langchain-google-genai
+pydantic
+langgraph
+langchain_community
+langchain-core
+python-dotenv
+streamlit
+langsmith
+langchain-tavily
+bs4
+tavily-python
