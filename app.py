@@ -1,11 +1,14 @@
 import streamlit as st
+from dotenv import load_dotenv
 from backend.app import handle_user_request, init_func
+import os
+load_dotenv()
 
 # Initialize function when app starts
 init_func()
 
 # Password authentication
-PASSWORD = "SaanviCom29@"  # Change this to your desired password
+PASSWORD = os.getenv("APP_PASSWORD")  # Change this to your desired password
 
 st.sidebar.header("Authentication")
 password = st.sidebar.text_input("Enter Your Password", type="password")
